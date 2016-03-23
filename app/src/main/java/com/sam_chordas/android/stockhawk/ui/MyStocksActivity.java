@@ -52,6 +52,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
   private Context mContext;
   private Cursor mCursor;
   boolean isConnected;
+  public final static String EXTRA_MESSAGE = "symbol";
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +87,11 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
               @Override public void onItemClick(View v, int position) {
                 //TODO:
                 // do something on item click
+                Intent intent = new Intent(mContext, MyStockDetailActivity.class);
+                mCursor.moveToPosition(position);
+                intent.putExtra(EXTRA_MESSAGE, mCursor.getString(mCursor.getColumnIndex("symbol")));
+                intent.putExtra("tag", "init");
+                mContext.startActivity(intent);
               }
             }));
     recyclerView.setAdapter(mCursorAdapter);
