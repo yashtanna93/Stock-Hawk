@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:fillViewport="true"
-    >
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Large Text"
+
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
 
             <ImageView
@@ -35,10 +37,9 @@
                 android:layout_height="300dp"
                 android:layout_marginTop="8dp"
                 android:contentDescription="@string/image_description"
-                android:scaleType="fitXY"
-                android:src="@drawable/placeholder"
                 android:padding="8dp"
-                />
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,10 +53,13 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="-8dp"
                     android:layout_marginRight="-8dp"
                     android:layout_weight="0.14"
+                    android:paddingEnd="0dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
+                    android:paddingTop="0dp"
                     android:text="@string/button1d"/>
 
                 <Button
@@ -63,10 +67,13 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="-8dp"
                     android:layout_marginRight="-8dp"
                     android:layout_weight="0.14"
+                    android:paddingEnd="0dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
+                    android:paddingTop="0dp"
                     android:text="@string/button5d"/>
 
                 <Button
@@ -74,10 +81,13 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="-8dp"
                     android:layout_marginRight="-8dp"
                     android:layout_weight="0.14"
+                    android:paddingEnd="0dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
+                    android:paddingTop="0dp"
                     android:text="@string/button3m"/>
 
                 <Button
@@ -85,10 +95,13 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="-8dp"
                     android:layout_marginRight="-8dp"
                     android:layout_weight="0.14"
+                    android:paddingEnd="0dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
+                    android:paddingTop="0dp"
                     android:text="@string/button6m"/>
 
                 <Button
@@ -96,10 +109,13 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="-8dp"
                     android:layout_marginRight="-8dp"
                     android:layout_weight="0.14"
+                    android:paddingEnd="0dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
+                    android:paddingTop="0dp"
                     android:text="@string/button1y"/>
 
                 <Button
@@ -107,10 +123,13 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="-8dp"
                     android:layout_marginRight="-8dp"
                     android:layout_weight="0.14"
+                    android:paddingEnd="0dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
+                    android:paddingTop="0dp"
                     android:text="@string/button2y"/>
 
                 <Button
@@ -118,10 +137,13 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="-8dp"
                     android:layout_marginRight="-8dp"
                     android:layout_weight="0.14"
+                    android:paddingEnd="0dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
+                    android:paddingTop="0dp"
                     android:text="@string/buttonmax"/>
             </LinearLayout>
 
@@ -129,21 +151,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:orientation="horizontal"
-                android:baselineAligned="false">
+                android:baselineAligned="false"
+                android:orientation="horizontal">
 
                 <TableLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:paddingEnd="16dp"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
+                    android:paddingTop="16dp"
                     android:stretchColumns="1">
 
                     <TableRow>
 
                         <TextView
-                            android:text="@string/last_label"/>
+                            android:text="@string/last_label"
+                            />
 
                         <TextView
                             android:id="@+id/lastprice"
@@ -159,7 +184,8 @@
                     <TableRow>
 
                         <TextView
-                            android:text="@string/high_label"/>
+                            android:text="@string/high_label"
+                            />
 
                         <TextView
                             android:id="@+id/highprice"
@@ -175,7 +201,8 @@
                     <TableRow>
 
                         <TextView
-                            android:text="@string/cap_label"/>
+                            android:text="@string/cap_label"
+                            />
 
                         <TextView
                             android:id="@+id/marketcap"
@@ -191,6 +218,7 @@
                     <TableRow>
 
                         <TextView
+                            android:layout_gravity="center"
                             android:text="@string/open_label"/>
 
                         <TextView
