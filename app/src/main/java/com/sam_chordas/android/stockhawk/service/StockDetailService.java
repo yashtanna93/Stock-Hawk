@@ -4,9 +4,9 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.sam_chordas.android.stockhawk.R;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
@@ -15,9 +15,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-
-import com.sam_chordas.android.stockhawk.R;
-import com.squareup.picasso.Picasso;
 
 /**
  * Created by Yash Tanna on 03/21/2016.
@@ -40,10 +37,6 @@ public class StockDetailService extends AsyncTask<Void, Void, String> {
 
     Response response = client.newCall(request).execute();
     return response.body().string();
-  }
-
-  public String getJsonResponse() {
-    return response;
   }
 
   private void setTextView(int id, String text) {

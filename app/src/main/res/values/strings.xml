@@ -1,31 +1,31 @@
 <resources>
     <string name="app_name">Stock Hawk</string>
 
-    <string name="action_example">Example action</string>
+    <string name="action_example" translatable="false">Example action</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="action_change_units">Change Units</string>
-    <string name="symbol_search">Symbol Search</string>
-    <string name="content_test">Search for a Stock Symbol</string>
-    <string name="input_hint">FB</string>
-    <string name="input_prefill"></string>
-    <string name="widget_title">Today\'s Market</string>
-    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
-    <string name="title_activity_my_stock_detail">MyStocksDetailActivity</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_change_units" translatable="false">Change Units</string>
+    <string name="symbol_search" translatable="false">Symbol Search</string>
+    <string name="content_test" translatable="false">Search for a Stock Symbol</string>
+    <string name="input_hint" translatable="false">FB</string>
+    <string name="input_prefill" translatable="false"></string>
+    <string name="widget_title" translatable="false">Today\'s Market</string>
+    <string name="network_toast" translatable="false">Uh-oh! This app requires an internet connection</string>
+    <string name="title_activity_my_stock_detail" translatable="false">MyStocksDetailActivity</string>
     <string name="image_description">Stock Image</string>
-    <string name="button1d">1d</string>
-    <string name="button5d">5d</string>
-    <string name="button3m">3m</string>
-    <string name="button6m">6m</string>
-    <string name="button1y">1y</string>
-    <string name="button2y">2y</string>
-    <string name="buttonmax">max</string>
-    <string name="cap_label">Market Cap</string>
-    <string name="last_label">Last Price</string>
-    <string name="high_label">High Price</string>
-    <string name="open_label">Open Price</string>
-    <string name="low_label">Low Price</string>
-    <string name="volume_label">Volume</string>
+    <string name="button1d" translatable="false">1d</string>
+    <string name="button5d" translatable="false">5d</string>
+    <string name="button3m" translatable="false">3m</string>
+    <string name="button6m" translatable="false">6m</string>
+    <string name="button1y" translatable="false">1y</string>
+    <string name="button2y" translatable="false">2y</string>
+    <string name="buttonmax" translatable="false">max</string>
+    <string name="cap_label" translatable="false">Market Cap</string>
+    <string name="last_label" translatable="false">Last Price</string>
+    <string name="high_label" translatable="false">High Price</string>
+    <string name="open_label" translatable="false">Open Price</string>
+    <string name="low_label" translatable="false">Low Price</string>
+    <string name="volume_label" translatable="false">Volume</string>
     <string name="content1d">Stock for 1 day</string>
     <string name="content5d">stock for 5 days</string>
     <string name="content3m">stock for 3 months</string>
@@ -35,4 +35,7 @@
     <string name="contentmax">stock over complete period</string>
     <string name="contentaddstock">Add a stock</string>
     <string name="networkerror">List may be empty or outdated due to connectivity issues!</string>
+    <string name="googsymbol" translatable="false">GOOG</string>
+    <string name="changepercent">100%</string>
+    <string name="bidpricestring">1000.00</string>
 </resources>

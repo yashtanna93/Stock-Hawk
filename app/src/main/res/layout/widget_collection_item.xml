@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:gravity="start|center_vertical"
-        tools:text="GOOG"/>
+        tools:text="@string/googsymbol"/>
 
     <TextView
         android:id="@+id/change"
@@ -31,6 +31,6 @@
         android:paddingLeft="3dp"
         android:paddingRight="3dp"
         android:paddingTop="3dp"
-        tools:text="100%"/>
+        tools:text="@string/changepercent"/>
 
 </FrameLayout>
