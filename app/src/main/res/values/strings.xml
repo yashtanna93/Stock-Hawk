@@ -26,4 +26,12 @@
     <string name="open_label">Open Price</string>
     <string name="low_label">Low Price</string>
     <string name="volume_label">Volume</string>
+    <string name="content1d">Stock for 1 day</string>
+    <string name="content5d">stock for 5 days</string>
+    <string name="content3m">stock for 3 months</string>
+    <string name="content6m">stock for 6 months</string>
+    <string name="content1y">stock for 1 year</string>
+    <string name="content2y">stock for 2 years</string>
+    <string name="contentmax">stock over complete period</string>
+    <string name="contentaddstock">Add a stock</string>
 </resources>

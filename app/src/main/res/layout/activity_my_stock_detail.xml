@@ -60,7 +60,8 @@
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
-                    android:text="@string/button1d"/>
+                    android:text="@string/button1d"
+                    android:contentDescription="@string/content1d"/>
 
                 <Button
                     android:id="@+id/button5d"
@@ -74,7 +75,8 @@
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
-                    android:text="@string/button5d"/>
+                    android:text="@string/button5d"
+                    android:contentDescription="@string/content5d"/>
 
                 <Button
                     android:id="@+id/button3m"
@@ -88,7 +90,8 @@
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
-                    android:text="@string/button3m"/>
+                    android:text="@string/button3m"
+                    android:contentDescription="@string/content3m"/>
 
                 <Button
                     android:id="@+id/button6m"
@@ -102,7 +105,8 @@
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
-                    android:text="@string/button6m"/>
+                    android:text="@string/button6m"
+                    android:contentDescription="@string/content6m"/>
 
                 <Button
                     android:id="@+id/button1y"
@@ -116,7 +120,8 @@
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
-                    android:text="@string/button1y"/>
+                    android:text="@string/button1y"
+                    android:contentDescription="@string/content1y"/>
 
                 <Button
                     android:id="@+id/button2y"
@@ -130,7 +135,8 @@
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
-                    android:text="@string/button2y"/>
+                    android:text="@string/button2y"
+                    android:contentDescription="@string/content2y"/>
 
                 <Button
                     android:id="@+id/button"
@@ -144,7 +150,8 @@
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
-                    android:text="@string/buttonmax"/>
+                    android:text="@string/buttonmax"
+                    android:contentDescription="@string/contentmax"/>
             </LinearLayout>
 
             <LinearLayout
