@@ -50,6 +50,7 @@ public class MyStockDetailActivity extends AppCompatActivity {
     stockDetailService.execute();
     String imgurl = "http://ichart.finance.yahoo.com/b?s=" + symbol;
     ImageView imageView = (ImageView) findViewById(R.id.stock_image);
+    LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) imageView.getLayoutParams();
     Picasso.with(this).load(imgurl).into(imageView);
     setButtonClick(R.id.button1d, imgurl, imageView);
     setButtonClick(R.id.button5d, "http://ichart.finance.yahoo.com/w?s=" + symbol, imageView);
