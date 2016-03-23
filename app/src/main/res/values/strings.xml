@@ -34,4 +34,5 @@
     <string name="content2y">stock for 2 years</string>
     <string name="contentmax">stock over complete period</string>
     <string name="contentaddstock">Add a stock</string>
+    <string name="networkerror">List may be empty or outdated due to connectivity issues!</string>
 </resources>

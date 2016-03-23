@@ -66,18 +66,20 @@ public class StockDetailService extends AsyncTask<Void, Void, String> {
   protected void onPostExecute(String result) {
     JSONObject stockJson = null;
     try {
-      stockJson = new JSONObject(result);
-      JSONObject quote = stockJson.getJSONObject("query").getJSONObject("results")
-          .getJSONObject("quote");
-      String currency = " " + quote.getString("Currency");
-      setTextView(R.id.lastprice, quote.getString("PreviousClose")+currency);
-      setTextView(R.id.openprice, quote.getString("Open")+currency);
-      setTextView(R.id.highprice, quote.getString("DaysHigh")+currency);
-      setTextView(R.id.lowprice, quote.getString("DaysLow")+currency);
-      setTextView(R.id.marketcap, quote.getString("MarketCapitalization")+currency);
-      setTextView(R.id.volume, quote.getString("Volume"));
-      activity.setTitle(quote.getString("Name"));
-      //Log.v("array-", stocksArray);
+      if(result!=null) {
+        stockJson = new JSONObject(result);
+        JSONObject quote = stockJson.getJSONObject("query").getJSONObject("results")
+            .getJSONObject("quote");
+        String currency = " " + quote.getString("Currency");
+        setTextView(R.id.lastprice, quote.getString("PreviousClose") + currency);
+        setTextView(R.id.openprice, quote.getString("Open") + currency);
+        setTextView(R.id.highprice, quote.getString("DaysHigh") + currency);
+        setTextView(R.id.lowprice, quote.getString("DaysLow") + currency);
+        setTextView(R.id.marketcap, quote.getString("MarketCapitalization") + currency);
+        setTextView(R.id.volume, quote.getString("Volume"));
+        activity.setTitle(quote.getString("Name"));
+        //Log.v("array-", stocksArray);
+      }
     } catch (JSONException e) {
       e.printStackTrace();
     }
